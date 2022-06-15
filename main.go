@@ -22,29 +22,29 @@ func main() {
 	// Публікація:
 	// Створити папку в своєму репозиторії в github та завантажити туди main.go файл, в котрому буде зроблено дане завдання.
 
-	var priceApple = 5.99
-	var pricePear = 7
-	var allMoney = 23
+	priceApple := 5.99
+	pricePear := 7
+	allMoney := 23
 	fmt.Printf("Маємо усього грошей- %v грн..\nОдне яблуко коштує - %v грн..\nОдна груша коштує - %v грн..\n", allMoney, priceApple, pricePear)
 	fmt.Println("--------------------------------------------")
 
 	fmt.Println("Скільки грошей треба витратити, щоб купити 9 яблук та 8 груш?")
-	var moneyForAppleAndPear = 9*priceApple + float64(8*pricePear)
+	moneyForAppleAndPear := 9*priceApple + float64(8*pricePear)
 	fmt.Println("Відповідь -", moneyForAppleAndPear)
 	fmt.Println("--------------------------------------------")
 
 	fmt.Println("Скільки груш ми можемо купити?")
-	var pearForAllMoney = allMoney / pricePear
+	pearForAllMoney := allMoney / pricePear
 	fmt.Println("Відповідь -", pearForAllMoney)
 	fmt.Println("--------------------------------------------")
 
 	fmt.Println("Скільки яблук ми можемо купити?")
-	var appleForAllMoney, _ = math.Modf(float64(allMoney) / priceApple)
+	appleForAllMoney, _ := math.Modf(float64(allMoney) / priceApple)
 	fmt.Println("Відповідь -", appleForAllMoney)
 	fmt.Println("--------------------------------------------")
 
 	fmt.Println("Чи ми можемо купити 2 груші та 2 яблука?")
-	var canBayAppleAndPear = (float64(2*pricePear) + 2*priceApple) <= float64(allMoney)
+	canBayAppleAndPear := (float64(2*pricePear) + 2*priceApple) <= float64(allMoney)
 	fmt.Println("Відповідь -", canBayAppleAndPear)
 	fmt.Println("--------------------------------------------")
 
